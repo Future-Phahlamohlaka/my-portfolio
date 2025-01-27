@@ -1,0 +1,70 @@
+body{
+    background-color: #dcdfe3;
+    font-family: "Poppins", serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#profile-img {
+    height: 100vh; 
+    width: auto;
+}
+
+
+#summary-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+
+}
+
+#greeting{
+    font-size: 3.5vw;
+}
+
+
+
+#name{
+    color: #e15657;
+}
+
+.alternating-sections{
+    opacity: 0;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#my-personality{
+    animation: hide-show 8s infinite;
+}
+
+#my-experience{
+    animation: hide-show 8s infinite 4s;
+}
+
+@keyframes hide-show{
+    20%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+}
+
+svg{
+    width: 100vw;
+    height: 1000px;
+    
+}
+
+
+
