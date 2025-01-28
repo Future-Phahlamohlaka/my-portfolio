@@ -54,16 +54,38 @@ header img:hover {
 
 }
 
+#summary-section svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    animation: summary-section-ani 15s infinite;
+}
+
+@keyframes summary-section-ani {
+    100%, 0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.15;
+    }
+    
+}
+
 #greeting{
     font-size: 3.2vw;
 }
 
 
 
-#name{
+#name {
     color: #e15657;
     font-weight: bold;
+    text-shadow: 0 0 2px #e15657, 0 0 4px #e15657, 0 0 7px #ff7b7c;
 }
+
+
 
 .alternating-sections{
     opacity: 0;
@@ -111,7 +133,7 @@ header img:hover {
 
 }
 
-svg{
+#experience-section svg{
     width: 100vw;
     height: 1000px;
     
@@ -222,6 +244,85 @@ h1 {
     }
 
 }
+
+#school-1 circle {
+    animation: school-1-ani 42s infinite 3s;
+}
+
+@keyframes school-1-ani {
+    100%, 16% {
+        fill: #dcdfe3;
+    }
+    17%, 98% {
+        fill: grey;
+    }
+}
+
+#work-1 circle {
+    animation: work-1-ani 42s infinite 3s;
+}
+
+@keyframes work-1-ani {
+    100%, 32% {
+        fill: #dcdfe3;
+    }
+    33%, 98% {
+        fill: grey;
+    }
+}
+
+#school-2 circle {
+    animation: school-2-ani 42s infinite 3s;
+}
+
+@keyframes school-2-ani {
+    100%, 48% {
+        fill: #dcdfe3;
+    }
+    49%, 98% {
+        fill: grey;
+    }
+}
+
+#work-2 circle {
+    animation: work-2-ani 42s infinite 3s;
+}
+
+@keyframes work-2-ani {
+    100%, 64% {
+        fill: #dcdfe3;
+    }
+    65%, 98% {
+        fill: grey;
+    }
+}
+
+#school-3 circle {
+    animation: school-3-ani 42s infinite 3s;
+}
+
+@keyframes school-3-ani {
+    100%, 80% {
+        fill: #dcdfe3;
+    }
+    80%, 98% {
+        fill: grey;
+    }
+}
+
+#work-3 circle {
+    animation: work-3-ani 42s infinite 3s;
+}
+
+@keyframes work-3-ani {
+    100%, 96% {
+        fill: #dcdfe3;
+    }
+    97%, 98% {
+        fill: grey;
+    }
+}
+
 
 
 
