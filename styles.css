@@ -39,22 +39,30 @@ header img:hover {
 
 
 #profile-img {
-    height: 100vh; 
-    width: auto;
+    height: auto;
+    width: 40%;
 }
 
 
 #summary-section{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 95%;
     padding-left: 30px;
     padding-right: 10px;
 
 }
 
-#summary-section svg{
+.summary-section-circle:nth-child(1){
+    width: 10%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    color: grey;
+}
+
+#summary-section-svg{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -68,13 +76,14 @@ header img:hover {
         opacity: 0.2;
     }
     50%{
-        opacity: 0.15;
+        opacity: 0.1;
     }
     
 }
 
 #greeting{
-    font-size: 3.2vw;
+    width: 30%;
+    font-size: 3em;
 }
 
 
@@ -92,6 +101,7 @@ header img:hover {
     position: absolute;
     margin-top: 0;
     margin-left: 0;
+    width: 30%;
 }
 
 #whoami{
@@ -133,11 +143,16 @@ header img:hover {
 
 }
 
+#experience-section{
+    position: relative;
+}
+
 #experience-section svg{
     width: 100vw;
     height: 1000px;
     
 }
+
 
 h1 {
     text-align: center;
@@ -166,10 +181,9 @@ h1 {
     margin: 10px 0;
 }
 
-
 .images-grid img {
-    width: 30vw;
-    height: 45vh;
+    width: 49%;
+    height: auto;
     border-radius: 8px;
     border: 1px solid #ddd;
     object-fit: cover;
@@ -205,127 +219,249 @@ h1 {
 }
 
 #moving-circle{
-    cx: 50%;
-    cy: 3%;
+    position: relative;
+    left: 48.5%;
+    top: 1.5%;
+    width: 3%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: grey;
     animation: move-circle 42s infinite 3s;
 }
 
 @keyframes move-circle {
     0%{
-        cx: 50%;
-        cy: 3%;
+        left: 48.5%;
+        top: 1.5%;
     }
     16%{
-        cx: 50%;
-        cy: 10%;
+        left: 48.5%;
+        top: 8.5%;
     }
     32%{
-        cx: 50%;
-        cy: 25%;
+        left: 48.5%;
+        top: 23.5%;
     }
     48%{
-        cx: 50%;
-        cy: 40%;
+        left: 48.5%;
+        top: 38.5%;
     }
 
     64%{
-        cx: 50%;
-        cy: 55%;
+        left: 48.5%;
+        top: 53.5%;
     }
 
     80%{
-        cx: 50%;
-        cy: 70%;
+        left: 48.5%;
+        top: 68.5%;
     }
 
     96%{
-        cx: 50%;
-        cy: 85%;
+        left: 48.5%;
+        top: 83.5%;
     }
 
 }
 
-#school-1 circle {
-    animation: school-1-ani 42s infinite 3s;
-}
 
 @keyframes school-1-ani {
     100%, 16% {
-        fill: #dcdfe3;
+        background-color: #dcdfe3;
     }
     17%, 98% {
-        fill: grey;
+        background-color: grey;
     }
 }
 
-#work-1 circle {
-    animation: work-1-ani 42s infinite 3s;
-}
 
 @keyframes work-1-ani {
     100%, 32% {
-        fill: #dcdfe3;
+        background-color: #dcdfe3;
     }
     33%, 98% {
-        fill: grey;
+        background-color: grey;
     }
 }
 
-#school-2 circle {
-    animation: school-2-ani 42s infinite 3s;
-}
 
 @keyframes school-2-ani {
     100%, 48% {
-        fill: #dcdfe3;
+        background-color: #dcdfe3;
     }
     49%, 98% {
-        fill: grey;
+        background-color: grey;
     }
 }
 
-#work-2 circle {
-    animation: work-2-ani 42s infinite 3s;
-}
 
 @keyframes work-2-ani {
     100%, 64% {
-        fill: #dcdfe3;
+        background-color: #dcdfe3;
     }
     65%, 98% {
-        fill: grey;
+        background-color: grey;
     }
 }
 
-#school-3 circle {
-    animation: school-3-ani 42s infinite 3s;
-}
 
 @keyframes school-3-ani {
-    100%, 80% {
-        fill: #dcdfe3;
+    100%, 79% {
+        background-color: #dcdfe3;
     }
     80%, 98% {
-        fill: grey;
+        background-color: grey;
     }
 }
 
-#work-3 circle {
-    animation: work-3-ani 42s infinite 3s;
-}
 
 @keyframes work-3-ani {
     100%, 96% {
-        fill: #dcdfe3;
+        background-color: #dcdfe3;
     }
     97%, 98% {
-        fill: grey;
+        background-color: grey;
     }
 }
 
+#svg {
+    position: relative;
+    width: 100vw;
+    height: 1000px;
+}
 
 
+#line {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 95%;
+    width: 2px;
+    background-color: grey;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #dcdfe3;
+    border: grey solid 1px;
+    left: 49%;
+    width: 2%;
+    aspect-ratio: 1;
+}
+
+#school-1 .circle{
+    top: 9%;
+    animation: school-1-ani 42s infinite 3s;
+}
+
+#school-1 p{
+    top: 7%;
+    left: 53%;
+}
+
+#school-2 .circle{
+    top: 39%;
+    animation: school-2-ani 42s infinite 3s;
+}
+
+#school-2 p{
+    top: 37%;
+    left: 53%;
+}
+
+#school-3 .circle{
+    top: 69%;
+    animation: school-3-ani 42s infinite 3s;
+}
+
+#school-3 p{
+    top: 67%;
+    left: 53%;
+}
+
+#work-1 .circle{
+    top: 24%;
+    animation: work-1-ani 42s infinite 3s;
+}
+
+#work-1 p{
+    top: 22%;
+    text-align: right;
+    right: 53%;
+}
+
+#work-2 .circle{
+    top: 54%;
+    animation: work-2-ani 42s infinite 3s;
+}
+
+#work-2 p{
+    top: 52%;
+    text-align: right;
+    right: 53%;
+}
+
+#work-3 .circle{
+    top: 84%;
+    animation: work-3-ani 42s infinite 3s;
+}
+
+#work-3 p{
+    top: 82%;
+    text-align: right;
+    right: 53%;
+}
+
+.g p{
+    position: absolute;
+}
+
+main{
+    border: solid black;
+}
+@media (max-width: 600px) {
+    #profile-img {
+        display: none;
+    }
+    #summary-section{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 25vh;    
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .alternating-sections, #greeting{
+        width: 90%;
+    }
+
+    #greeting{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .images-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-grid img{
+        width: 95%;
+        height: auto;
+    }
+    
 
 
+}
+
+@media (max-width: 1000px) {
+    #projects-section{
+        width: 90%;
+    }
+}
 
 
