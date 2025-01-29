@@ -14,7 +14,7 @@ main{
 
 header {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
     color: #fff;
@@ -56,10 +56,52 @@ header img:hover {
 }
 
 .summary-section-circle:nth-child(1){
+    position: absolute;
     width: 10%;
     aspect-ratio: 1;
-    border-radius: 100%;
-    color: grey;
+    top: 15%;
+    left: 25%;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.summary-section-circle:nth-child(2){
+    position: absolute;
+    width: 4%;
+    aspect-ratio: 1;
+    top: 9%;
+    left: 14%;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.summary-section-circle:nth-child(3){
+    position: absolute;
+    width: 12%;
+    aspect-ratio: 1;
+    top: 84%;
+    left: 44%;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.summary-section-circle:nth-child(4){
+    position: absolute;
+    width: 14%;
+    aspect-ratio: 1;
+    top: 23%;
+    left: 73%;
+    border-radius: 50%;
+    background-color: grey;
+}
+.summary-section-circle:nth-child(5){
+    position: absolute;
+    width: 18%;
+    aspect-ratio: 1;
+    top: 69%;
+    left: 6%;
+    border-radius: 50%;
+    background-color: grey;
 }
 
 #summary-section-svg{
@@ -224,7 +266,7 @@ h1 {
     top: 1.5%;
     width: 3%;
     aspect-ratio: 1;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: grey;
     animation: move-circle 42s infinite 3s;
 }
@@ -342,7 +384,7 @@ h1 {
 
 .circle {
     position: absolute;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #dcdfe3;
     border: grey solid 1px;
     left: 49%;
@@ -417,9 +459,6 @@ h1 {
     position: absolute;
 }
 
-main{
-    border: solid black;
-}
 @media (max-width: 600px) {
     #profile-img {
         display: none;
